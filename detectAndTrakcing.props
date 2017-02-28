@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>./iconv-1.9.2.win32/include;./libxml2-2.7.8.win32/include;./Hierarchy/zlib-1.2.5/include;./facedetect/include;$(IncludePath)</IncludePath>
+    <LibraryPath>./iconv-1.9.2.win32/lib;./libxml2-2.7.8.win32/lib;./zlib-1.2.5/lib;./facedetect/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>iconv.lib;iconv_a.lib;libxml2.lib;libxml2_a.lib;libxml2_a_dll.lib;libfacedetect.lib;libfacedetect-x64.lib;zdll.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
